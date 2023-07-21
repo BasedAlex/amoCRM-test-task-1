@@ -14,8 +14,7 @@ const createTimerAnimator = () => {
     const textHour = Math.floor(seconds / hour) > 9 ? Math.floor(seconds / hour) : '0' + Math.floor(seconds / hour) 
     const textMinute = Math.floor((seconds % hour) / minute) > 9 ? Math.floor((seconds % hour) / minute) : '0' + Math.floor((seconds % hour) / minute)
     const textSecond = Math.floor((seconds % minute) / second) > 9 ? Math.floor((seconds % minute) / second) : '0' + Math.floor((seconds % minute) / second)
-    const added = `${textHour}:${textMinute}:${textSecond}`    
-    е
+    const added = `${textHour}:${textMinute}:${textSecond}` 
     document.querySelector('span').innerText = added
 
   };
